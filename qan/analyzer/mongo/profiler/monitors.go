@@ -9,9 +9,9 @@ import (
 )
 
 const (
-	MgoTimeoutDialInfo      = 5 * time.Second
-	MgoTimeoutSessionSync   = 5 * time.Second
-	MgoTimeoutSessionSocket = 5 * time.Second
+	MgoTimeoutDialInfo      = 50 * time.Second
+	MgoTimeoutSessionSync   = 50 * time.Second
+	MgoTimeoutSessionSocket = 50 * time.Second
 )
 
 type newMonitor func(

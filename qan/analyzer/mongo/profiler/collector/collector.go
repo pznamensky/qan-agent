@@ -13,10 +13,10 @@ import (
 )
 
 const (
-	MgoTimeoutDialInfo      = 5 * time.Second
-	MgoTimeoutSessionSync   = 5 * time.Second
-	MgoTimeoutSessionSocket = 5 * time.Second
-	MgoTimeoutTail          = 1 * time.Second
+	MgoTimeoutDialInfo      = 50 * time.Second
+	MgoTimeoutSessionSync   = 50 * time.Second
+	MgoTimeoutSessionSocket = 50 * time.Second
+	MgoTimeoutTail          = 10 * time.Second
 )
 
 func New(dialInfo *pmgo.DialInfo, dialer pmgo.Dialer) *Collector {
