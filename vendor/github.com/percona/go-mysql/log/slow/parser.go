@@ -34,7 +34,7 @@ import (
 var timeRe = regexp.MustCompile(`Time: (\S+\s{1,2}\S+)`)
 var userRe = regexp.MustCompile(`User@Host: ([^\[]+|\[[^[]+\]).*?@ (\S*) \[(.*)\]`)
 var schema = regexp.MustCompile(`Schema: +(.*?) +Last_errno:`)
-var headerRe = regexp.MustCompile(`^#\s+[A-Z]`)
+var headerRe = regexp.MustCompile(`^#`)
 var metricsRe = regexp.MustCompile(`(\w+): (\S+|\z)`)
 var adminRe = regexp.MustCompile(`command: (.+)`)
 var setRe = regexp.MustCompile(`^SET (?:last_insert_id|insert_id|timestamp)`)
